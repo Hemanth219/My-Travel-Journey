@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Page */
+body.home {
+    background: url("uploads/background.jpg") no-repeat center center/cover;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.overlay {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e68900;
+}
+
+/* Login button */
+.login-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #0056b3;
+}
+
+/* States Page */
+body.states {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.states-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+}
+
+.state-card {
+    text-align: center;   /* center the image and button */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    background: white;
+    padding-bottom: 10px; /* some space below image */
+}
+
+.state-card img {
+    width: 60%;
+    height: 250px;
+    object-fit: contain ;
+    display: block;
+    margin: 0 auto; /* center the image */
+    border-radius: 10px;
+}
+
+.state-button {
+    display: inline-block;
+    background: rgba(255, 152, 0, 0.9);
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-top: 8px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
